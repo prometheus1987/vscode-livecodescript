@@ -1,3 +1,13 @@
-*.livecodescript linguist-language=Livecode
-*.livecode linguist-language=Livecode
-*.lcb linguist-language=Livecode Builder
+# Auto detect text files and perform LF normalization
+*.livecodescript linguist-detectable=true
+*.livecode linguist-detectable=false
+
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files we want to always be normalized and converted
+# to native line endings on checkout.
+*.livecodescript text
+
+# Declare files that will always have LF line endings on checkout.
+*.livecodescript text eol=CRLF
